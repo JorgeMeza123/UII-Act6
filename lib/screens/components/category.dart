@@ -13,7 +13,7 @@ class CategoryList extends StatelessWidget {
         physics: ScrollPhysics(),
         itemCount: products.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2, childAspectRatio: 0.85),
+            crossAxisCount: 2, childAspectRatio: 0.55),
         itemBuilder: (context, index) => CategoryCard(
               product: products[index],
             ));
@@ -29,9 +29,9 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(15.0),
       child: Container(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(15.0),
         decoration: BoxDecoration(
             color: product.color, borderRadius: BorderRadius.circular(15.0)),
         child: Column(
@@ -41,12 +41,12 @@ class CategoryCard extends StatelessWidget {
               height: 100,
             ),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
             Text(
               product.titulo,
               style: const TextStyle(
-                  fontSize: 18,
+                  fontSize: 30,
                   color: Colors.white,
                   fontWeight: FontWeight.w600),
             ),
@@ -54,7 +54,21 @@ class CategoryCard extends StatelessWidget {
               height: 10,
             ),
             Text(
-              "${product.precio} precio",
+              "Precio: ${product.precio} ",
+              style: const TextStyle(
+                fontSize: 15,
+                color: Colors.white,
+              ),
+            ),
+            Text(
+              "Descripcion:\n ${product.descripcion} ",
+              style: const TextStyle(
+                fontSize: 13,
+                color: Colors.white,
+              ),
+            ),
+            Text(
+              "Proveedor: ${product.proveedor} ",
               style: const TextStyle(
                 fontSize: 15,
                 color: Colors.white,
