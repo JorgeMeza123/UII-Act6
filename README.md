@@ -25,7 +25,8 @@ samples, guidance on mobile development, and a full API reference.
 ![image](https://github.com/JorgeMeza123/UII-Act6/assets/143548420/eba59c55-7c1c-443c-a858-cceb7ea691f5)
 
 
-![image](https://github.com/JorgeMeza123/UII-Act6/assets/143548420/69a4757e-4f25-4a74-8e27-95268cb356ab)
+![image](https://github.com/JorgeMeza123/UII-Act6/assets/143548420/659aed70-6cd7-4ce1-aab5-1a7e7408e57a)
+
 
 
 
